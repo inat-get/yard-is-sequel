@@ -18,6 +18,6 @@ Gem::Specification::new do |spec|
   spec.add_dependency 'sequel', '~> 5.100'
   spec.add_dependency 'sqlite3', '~> 2.9'
 
-  spec.add_development_dependency 'redcarpet'
-  spec.add_development_dependency 'rdoc'
+  # spec.add_development_dependency 'redcarpet'
+  # spec.add_development_dependency 'rdoc'
 end
