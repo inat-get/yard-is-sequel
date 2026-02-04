@@ -17,8 +17,7 @@ Gem::Specification::new do |spec|
   spec.add_dependency 'yard', '~> 0.9'
   spec.add_dependency 'sequel', '~> 5.100'
   spec.add_dependency 'sqlite3', '~> 2.9'
-  # spec.add_dependency 'bigdecimal', '~> 4.0'
 
-  # spec.add_development_dependency 'redcarpet', '~> 3.6'
-  # spec.add_development_dependency 'rdoc', '~> 7.1'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rspec'
 end
