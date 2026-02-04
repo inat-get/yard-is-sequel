@@ -23,7 +23,9 @@ jobs:
     strategy:
       matrix:
         ruby-version: ['3.4']
-
+    env:
+      BUNDLE_FROZEN: false
+  
     steps:
     - uses: actions/checkout@v6
     - name: Set up Ruby
