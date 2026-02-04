@@ -16,4 +16,6 @@ Gem::Specification::new do |spec|
 
   spec.add_dependency 'yard', '~> 0.9'
   spec.add_dependency 'sequel', '~> 5.100'
+
+  spec.add_development_dependency 'redcarpet'
 end
