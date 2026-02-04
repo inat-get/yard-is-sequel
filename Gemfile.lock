@@ -7,6 +7,7 @@ PATH
       yard (~> 0.9)
 
 GEM
+  remote: https://rubygems.org/
   specs:
     bigdecimal (4.0.1)
     sequel (5.100.0)
@@ -21,10 +22,10 @@ DEPENDENCIES
   yard-is-sequel!
 
 CHECKSUMS
-  bigdecimal (4.0.1)
-  sequel (5.100.0)
-  sqlite3 (2.9.0-x86_64-linux-gnu)
-  yard (0.9.38)
+  bigdecimal (4.0.1) sha256=8b07d3d065a9f921c80ceaea7c9d4ae596697295b584c296fe599dd0ad01c4a7
+  sequel (5.100.0) sha256=cb0329b62287a01db68eead46759c14497a3fae01b174e2c41da108a9e9b4a12
+  sqlite3 (2.9.0-x86_64-linux-gnu) sha256=72fff9bd750070ba3af695511ba5f0e0a2d8a9206f84869640b3e99dfaf3d5a5
+  yard (0.9.38) sha256=721fb82afb10532aa49860655f6cc2eaa7130889df291b052e1e6b268283010f
   yard-is-sequel (0.8.0)
 
 BUNDLED WITH
