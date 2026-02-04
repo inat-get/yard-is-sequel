@@ -16,3 +16,11 @@ gem 'yard-is-sequel', '~> 0.8'
 spec.add_development_dependency 'yard-is-sequel', '~> 0.8'
 ```
 
+Затем включаем его через ключ в командной строке:
+
+```shell
+$ yardoc --plugin is-sequel
+```
+
+Или в файле `.yardopts`.
+
