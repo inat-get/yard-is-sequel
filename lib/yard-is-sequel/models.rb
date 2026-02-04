@@ -4,7 +4,7 @@ require 'yard'
 
 require_relative 'info'
 
-class IS:YARD::Sequel::ModelHandler < YARD::Handlers::Ruby::ClassHandler
+class IS::YARD::Sequel::ModelHandler < YARD::Handlers::Ruby::ClassHandler
   handles :class
 
   def process
@@ -35,5 +35,5 @@ class IS:YARD::Sequel::ModelHandler < YARD::Handlers::Ruby::ClassHandler
     superclass_source =~ /Sequel::Model/ ||
       (superclass.type == :call && superclass.namespace.source == "Sequel::Model")
   end
-  
+
 end
