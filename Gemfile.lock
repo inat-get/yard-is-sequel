@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     yard-is-sequel (0.8.0)
-      bigdecimal (~> 4.0)
       sequel (~> 5.100)
       sqlite3 (~> 2.9)
       yard (~> 0.9)
