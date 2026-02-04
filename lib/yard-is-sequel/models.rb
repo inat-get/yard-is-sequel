@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'yard'
+# require "yard"
 
-require_relative 'info'
+require_relative "info"
 
 class IS::YARD::Sequel::ModelHandler < YARD::Handlers::Ruby::ClassHandler
   handles :class
@@ -12,6 +12,7 @@ class IS::YARD::Sequel::ModelHandler < YARD::Handlers::Ruby::ClassHandler
     return unless sequel_model?
 
     # Добавляем тег к классу, что это Sequel модель
+    # Используем пустое значение для тега
     namespace.add_tag(YARD::Tags::Tag.new(:sequel_model, ""))
 
     log.debug "[Sequel Plugin] Detected Sequel model: #{namespace}"
@@ -20,20 +21,20 @@ class IS::YARD::Sequel::ModelHandler < YARD::Handlers::Ruby::ClassHandler
   private
 
   def sequel_model?
-    # Проверяем наследование от Sequel::Model
-    superclass = statement.inheritance_superclass
+    # Проверяем наличие суперкласса
+    superclass = statement.superclass
     return false unless superclass
 
-    # Разбираем возможные варианты:
-    # class User < Sequel::Model
-    # class User < Sequel::Model(:users)
-    # class User < Sequel::Model(DB[:users])
-
+    # Получаем исходный код суперкласса как строку
     superclass_source = superclass.source
 
-    # Проверяем разные варианты
-    superclass_source =~ /Sequel::Model/ ||
-      (superclass.type == :call && superclass.namespace.source == "Sequel::Model")
+    # Проверяем разные варианты записи Sequel::Model:
+    # 1. class User < Sequel::Model
+    # 2. class User < Sequel::Model(:users)
+    # 3. class User < Sequel::Model(DB[:users])
+
+    # Простая проверка по подстроке
+    superclass_source =~ /Sequel::Model/
   end
 
 end

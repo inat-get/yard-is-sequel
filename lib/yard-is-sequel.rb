@@ -22,14 +22,17 @@ require_relative "yard-is-sequel/models"
 YARD::Handlers::Processor.register_handler_namespace(:sequel, IS::YARD::Sequel)
 
 # Регистрируем конкретные обработчики
-YARD::Handlers::Processor.register_handler(
-  :sequel,
-  IS::YARD::Sequel::AssociationsHandler
-)
-YARD::Handlers::Processor.register_handler(
-  :sequel,
-  IS::YARD::Sequel::ModelHandler
-)
+# YARD::Handlers::Processor.register_handler_for_namespace(
+#   :sequel,
+#   IS::YARD::Sequel::AssociationsHandler
+# )
+# YARD::Handlers::Processor.register_handler_for_namespace(
+#   :sequel,
+#   IS::YARD::Sequel::ModelHandler
+# )
 
 # Инициализируем плагин
 IS::YARD::Sequel.init
+
+# YARD::Handlers::Processor.register_handler_namespace :sequel, IS::YARD::Sequel
+# YARD::Handlers::Processor.register_handler_for_namespace :sequel, IS::YARD::Sequel::AssociationsHandler
