@@ -1,0 +1,29 @@
+PATH
+  remote: .
+  specs:
+    yard-is-sequel (0.8.0)
+      sequel (~> 5.100)
+      yard (~> 0.9)
+
+GEM
+  specs:
+    bigdecimal (4.0.1)
+    sequel (5.100.0)
+      bigdecimal
+    yard (0.9.38)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  yard-is-sequel!
+
+CHECKSUMS
+  bigdecimal (4.0.1)
+  sequel (5.100.0)
+  yard (0.9.38)
+  yard-is-sequel (0.8.0)
+
+BUNDLED WITH
+  4.0.4
