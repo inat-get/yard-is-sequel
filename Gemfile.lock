@@ -3,28 +3,48 @@ PATH
   specs:
     yard-is-sequel (0.8.0)
       sequel (~> 5.100)
+      sqlite3 (~> 2.9)
       yard (~> 0.9)
 
 GEM
   specs:
     bigdecimal (4.0.1)
+    date (3.5.1)
+    erb (6.0.1)
+    psych (5.3.1)
+      date
+      stringio
+    rdoc (7.1.0)
+      erb
+      psych (>= 4.0.0)
+      tsort
     redcarpet (3.6.1)
     sequel (5.100.0)
       bigdecimal
+    sqlite3 (2.9.0-x86_64-linux-gnu)
+    stringio (3.2.0)
+    tsort (0.2.0)
     yard (0.9.38)
 
 PLATFORMS
-  ruby
   x86_64-linux
 
 DEPENDENCIES
+  rdoc
   redcarpet
   yard-is-sequel!
 
 CHECKSUMS
   bigdecimal (4.0.1)
+  date (3.5.1)
+  erb (6.0.1)
+  psych (5.3.1)
+  rdoc (7.1.0)
   redcarpet (3.6.1)
   sequel (5.100.0)
+  sqlite3 (2.9.0-x86_64-linux-gnu)
+  stringio (3.2.0)
+  tsort (0.2.0)
   yard (0.9.38)
   yard-is-sequel (0.8.0)
 
