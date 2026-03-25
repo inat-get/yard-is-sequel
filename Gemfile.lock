@@ -22,11 +22,11 @@ GEM
     rspec-expectations (3.13.5)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
-    rspec-mocks (3.13.7)
+    rspec-mocks (3.13.8)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.7)
-    sequel (5.101.0)
+    sequel (5.102.0)
       bigdecimal
     simplecov (0.22.0)
       docile (~> 1.1)
@@ -34,11 +34,29 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.13.2)
     simplecov_json_formatter (0.1.4)
-    sqlite3 (2.9.0-x86_64-linux-gnu)
+    sqlite3 (2.9.2-aarch64-linux-gnu)
+    sqlite3 (2.9.2-aarch64-linux-musl)
+    sqlite3 (2.9.2-arm-linux-gnu)
+    sqlite3 (2.9.2-arm-linux-musl)
+    sqlite3 (2.9.2-arm64-darwin)
+    sqlite3 (2.9.2-x86-linux-gnu)
+    sqlite3 (2.9.2-x86-linux-musl)
+    sqlite3 (2.9.2-x86_64-darwin)
+    sqlite3 (2.9.2-x86_64-linux-gnu)
+    sqlite3 (2.9.2-x86_64-linux-musl)
     yard (0.9.38)
 
 PLATFORMS
-  x86_64-linux
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm-linux-gnu
+  arm-linux-musl
+  arm64-darwin
+  x86-linux-gnu
+  x86-linux-musl
+  x86_64-darwin
+  x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
   rake
@@ -54,15 +72,24 @@ CHECKSUMS
   rspec (3.13.2) sha256=206284a08ad798e61f86d7ca3e376718d52c0bc944626b2349266f239f820587
   rspec-core (3.13.6) sha256=a8823c6411667b60a8bca135364351dda34cd55e44ff94c4be4633b37d828b2d
   rspec-expectations (3.13.5) sha256=33a4d3a1d95060aea4c94e9f237030a8f9eae5615e9bd85718fe3a09e4b58836
-  rspec-mocks (3.13.7) sha256=0979034e64b1d7a838aaaddf12bf065ea4dc40ef3d4c39f01f93ae2c66c62b1c
+  rspec-mocks (3.13.8) sha256=086ad3d3d17533f4237643de0b5c42f04b66348c28bf6b9c2d3f4a3b01af1d47
   rspec-support (3.13.7) sha256=0640e5570872aafefd79867901deeeeb40b0c9875a36b983d85f54fb7381c47c
-  sequel (5.101.0) sha256=d2ae3fd997a7c4572e8357918e777869faf90dc19310fcd6332747122aed2b29
+  sequel (5.102.0) sha256=c25bb85a44ae59b3ed41ca7c32c33316cf81a6fcaeabedb4036ba141dde70919
   simplecov (0.22.0) sha256=fe2622c7834ff23b98066bb0a854284b2729a569ac659f82621fc22ef36213a5
   simplecov-html (0.13.2) sha256=bd0b8e54e7c2d7685927e8d6286466359b6f16b18cb0df47b508e8d73c777246
   simplecov_json_formatter (0.1.4) sha256=529418fbe8de1713ac2b2d612aa3daa56d316975d307244399fa4838c601b428
-  sqlite3 (2.9.0-x86_64-linux-gnu) sha256=72fff9bd750070ba3af695511ba5f0e0a2d8a9206f84869640b3e99dfaf3d5a5
+  sqlite3 (2.9.2-aarch64-linux-gnu) sha256=eeb86db55645b85327ba75129e3614658d974bf4da8fdc87018a0d42c59f6e42
+  sqlite3 (2.9.2-aarch64-linux-musl) sha256=4feff91fb8c2b13688da34b5627c9d1ed9cedb3ee87a7114ec82209147f07a6d
+  sqlite3 (2.9.2-arm-linux-gnu) sha256=1ee2eb06b5301aaf5ce343a6e88d99ac932d95202d7b350f0e7b6d8d588580d7
+  sqlite3 (2.9.2-arm-linux-musl) sha256=8ca0de6aceede968de0394e22e95d549834c4d8e318f69a92a52f049878a0057
+  sqlite3 (2.9.2-arm64-darwin) sha256=d15bd9609a05f9d54930babe039585efc8cadd57517c15b64ec7dfa75158a5e9
+  sqlite3 (2.9.2-x86-linux-gnu) sha256=066bc904522f8a7072236a81237c03a4a1dfe070a25107e392de03d1e4ad0e6d
+  sqlite3 (2.9.2-x86-linux-musl) sha256=6503c76278f5e8629b12b6518ff43a9a4f6d9381de73f0b086c9fa1226db5ede
+  sqlite3 (2.9.2-x86_64-darwin) sha256=ed691b5021674d72582d03c5a38e89634b961902735fb6225273892805421d13
+  sqlite3 (2.9.2-x86_64-linux-gnu) sha256=dce83ffcb7e72f9f7aeb6e5404f15d277a45332fe18ccce8a8b3ed51e8d23aee
+  sqlite3 (2.9.2-x86_64-linux-musl) sha256=e8dd906a613f13b60f6d47ae9dda376384d9de1ab3f7e3f2fdf2fd18a871a2d7
   yard (0.9.38) sha256=721fb82afb10532aa49860655f6cc2eaa7130889df291b052e1e6b268283010f
   yard-is-sequel (0.8.0)
 
 BUNDLED WITH
-  4.0.4
+  4.0.7
